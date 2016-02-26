@@ -1,0 +1,87 @@
+  <header class="header home-header text-center" >
+  <div class="container">
+    <h1 class="text-center"><a href="index.html">{{'Ola ' + vm.count}} </a></h1>
+    <h2 class="text-center">Slogan goes here!</h2>
+    <a class="btn btn-default" ng-click="vm.increment()">Post a job!</a>
+  </div>
+</header>
+
+<section class="filters home-filters hidden-xs ">
+  <div class="container">
+    <div class="col-sm-3 filter-label">
+      <h4>Estou procurando:</h4>
+    </div>
+    <div class="col-sm-9 filter-list">
+      <ul>
+        <li class="col-sm-3 item">
+          <input type="checkbox" name="fullTime" id="fullTime"> <label for="fullTime">Full Time</label>
+        </li>
+        <li class="col-sm-3 item">
+          <input type="checkbox" name="estagio" id="estagio"> <label for="estagio">Estágio</label>
+        </li>
+        <li class="col-sm-3 item">
+          <input type="checkbox" name="freela" id="freela"> <label for="freela">Freela</label>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="tag-filters hidden-xs">
+  <div class="container">
+    <div class="col-sm-12 active-filters">
+      <ul class="default-list tag-list">
+        <li class="tag">
+          <a href="#">Tag Name | x</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="latest-jobs">
+  <div class="container">
+    <div class="col-sm-12 jobs-label">
+      <h3>Latest Jobs</h3>
+    </div>
+    <div class="jobs-list">
+     <ul>
+        <li class="col-xs-12 item" ng-repeat="job in vm.jobs" ng-if="vm.jobs && vm.jobs.length">
+
+          <div class="col-sm-1 hidden-xs logo">
+            <img ng-src="{{ job._company.companyLogo }}" alt="{{ job._company.name }}" ng-show="job._company.companyLogo">
+              
+            <p ng-if="!job._company.companyLogo">O</p>
+          </div>
+
+          <div class="col-sm-4 col-xs-7 info">
+            <h4><a ng-href="{{ '#/jobs/' + job._id}} "> {{ job.name }} </a></h4>
+                {{ job._company.name }}
+          </div>
+
+          <div class="col-sm-4 hidden-xs tags">
+            <ul class="default-list tag-list">
+              <li class="tag" ng-repeat="tag in job.tags">
+                <a href="#">{{ tag }}</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-sm-2 col-xs-3 place">
+            <h4>JOB TYPE</h4>
+            <span class="glyphicon glyphicon-globe"></span> {{ job.location }}
+          </div>
+
+          <div class="col-sm-1 col-xs-2 date text-center">
+            {{ job.createdAt | date : '' }}<br>
+          </div>
+       </li>
+      </ul>
+    </div>
+
+    <div class="clearfix"></div>    
+
+    <a href="#" class="btn btn-primary">Load more</a>
+
+  </div>
+</section>

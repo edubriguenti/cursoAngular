@@ -1,0 +1,215 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+  color: #555;
+}
+
+label{
+  font-weight: normal;
+}
+
+.hidden {
+  display: none;
+}
+
+.default-list{
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  float: none;
+}
+
+.btn{
+  font-size: 12px;
+  padding: 15px 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 3px;
+  border: none;
+}
+
+.btn-default{
+  background: none;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.header{
+  padding: 40px;
+  background: #4a99e2;
+  background: linear-gradient(45deg,#54c1f4 0%,#28a7db 50%,#4a99e2 100%);
+  color: #fff;
+}
+
+/* HOME */
+.home-header{
+  padding: 60px;
+}
+
+.home-header .btn{
+  margin-top: 40px;
+}
+
+.home-filters{
+  border-bottom: 1px solid #ccc;
+}
+
+.home-filters .filter-label h4{
+  margin: 40px 0;
+}
+
+.home-filters .filter-list ul{
+  margin: 40px 0 !important;
+}
+
+.latest-jobs{
+  float: left;
+  width: 100%;
+  margin: 40px 0;
+  text-align: center;
+}
+
+/* FILTERS */
+.filters .filter-list ul{
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.aside-filters{
+  margin-top: 20px;
+  padding-bottom: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+}
+
+.aside-filters .filter-list .item{
+  width: 100%;
+  display: table;
+  padding: 10px 0;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.aside-filters .filter-list .item:last-child{
+  border-bottom: none;
+}
+
+.tag-filters {
+  margin-top: 40px;
+}
+
+.tag-filters .active-filters {
+  background: #eee;
+  padding: 10px;
+}
+
+/* JOBS */
+
+.jobs{
+  padding-bottom: 40px;
+}
+
+.jobs-label{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: left;
+}
+
+.jobs-label h3{
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.jobs-list > ul {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.jobs-list > ul > li{
+  padding: 20px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.jobs-list > ul > li:hover {
+  background-color: #eee;
+}
+
+.jobs-list > ul > li:first-child{
+  border-top: 1px solid #ddd;
+}
+
+.jobs-list .logo {
+  width: 3.5em;
+  height: 3.5em;
+  padding: 0;
+  margin: 0.5em 0;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+}
+
+.jobs-list .logo p {
+  color: #dad6d2;
+  font-weight: 600;
+  font-size: 1.5em;
+  margin: 0;
+  text-align: center;
+  line-height: 2em;
+  vertical-align: middle;
+}
+
+.jobs-list .logo img{
+  width: 100%;
+  display: block;
+}
+
+.jobs-list .info h4{
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.jobs-list .place h4{
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* TAG LIST */
+.tag-list .tag {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.tag-list a {
+  padding: 5px;
+  margin: 3px;
+  font-size: 0.75em;
+  text-decoration: none;
+  color: #0F1B38;
+  border: 2px solid #0F1B38;
+  border-radius: 0.2em;
+}
+
+.tag-list .tag a:hover {
+  background-color: #0F1B38;
+  color: #fff;
+}
+
+.tag-filters .tag a {
+  background-color: #0F1B38;
+  color: #fff;
+}
+
+.tag-filters .tag a:hover{
+  color: #0F1B38;
+  background-color: transparent;
+}

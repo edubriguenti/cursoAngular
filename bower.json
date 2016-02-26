@@ -1,0 +1,21 @@
+{
+  "name": "jobfinder",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Eduardo <edubriguenti@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "1.2"
+  }
+}
